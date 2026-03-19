@@ -12,13 +12,21 @@ public class JustcodeJavaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(JustcodeJavaApplication.class, args);
 
-		String hello = "Say Hello to potato :D ";
-
 		Playground playground = new PlaygroundImpl();
+
+		//Saying hello welcome
 		String welcome = playground.getMyWelcome();
+		String hello = "Say Hello to potato :D ";
+		System.out.println(welcome + " " + hello);
 
-		System.out.print(welcome + " " + hello);
+		//Anagrammes 
+		boolean anagrammes1 = playground.anagrammes("hello", "ollhe");
+		boolean anagrammes2 = playground.anagrammes("hello", "welcome");
+		System.out.println("anagrammes1 : " + anagrammes1);
+		System.out.println("anagrammes2 : " + anagrammes2);
 
+		//Doublons
+		
 	}
 
 }
