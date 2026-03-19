@@ -9,7 +9,12 @@ public class JustcodeJavaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(JustcodeJavaApplication.class, args);
 
-		System.out.println("say Hello to potato :) ");
+		String hello = "Say Hello to potato :D ";
+
+		PlaygroundImpl text = new PlaygroundImpl(hello);
+
+		System.out.println(text.getMyInput() + " welcome to the Playground follow me ~~~~");
+
 	}
 
 }
