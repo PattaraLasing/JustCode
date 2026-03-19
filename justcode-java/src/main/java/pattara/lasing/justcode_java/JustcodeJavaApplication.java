@@ -3,6 +3,9 @@ package pattara.lasing.justcode_java;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import pattara.lasing.justcode_java.playground.Playground;
+import pattara.lasing.justcode_java.playground.PlaygroundImpl;
+
 @SpringBootApplication
 public class JustcodeJavaApplication {
 
@@ -11,9 +14,10 @@ public class JustcodeJavaApplication {
 
 		String hello = "Say Hello to potato :D ";
 
-		PlaygroundImpl text = new PlaygroundImpl(hello);
+		Playground playground = new PlaygroundImpl();
+		String welcome = playground.getMyWelcome();
 
-		System.out.println(text.getMyInput() + " welcome to the Playground follow me ~~~~");
+		System.out.print(welcome + " " + hello);
 
 	}
 
