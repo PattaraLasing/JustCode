@@ -1,6 +1,7 @@
 package pattara.lasing.justcode_java.playground;
 
 import java.util.List;
+import java.util.Set;
 
 public interface Playground {
 
@@ -16,14 +17,14 @@ public interface Playground {
      * Collections : Doublons
      * À partir d'une liste d'entiers, retourner les éléments en double
     */
-    public List<String> doublons(List<String> listInput);
+    public Set<Integer> doublons(List<Integer> listInput);
 
     /**
      * Algorithmique : FizzBuzz
      * Afficher les nombres de 1 à 100
      * Si multiple de 3 - afficher "Fizz", si mutiple de 5 - afficher "Buzz", si multiple 3 et 5 - afficher "FizzBuzz"
      */
-    public List<String> fizzBuzz();
+    public List<String> fizzBuzz(int startInt, int endInt);
 
     /**
      * Streams Java - Filtrage d'information

@@ -1,5 +1,9 @@
 package pattara.lasing.justcode_java;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -26,7 +30,13 @@ public class JustcodeJavaApplication {
 		System.out.println("anagrammes2 : " + anagrammes2);
 
 		//Doublons
-		
+		List<Integer> duplicateInt = Arrays.asList(2, 9, 2, 9, 5, 3, 50, 45, 50, 50);
+		Set<Integer> doublons = playground.doublons(duplicateInt);
+		System.out.println("doublons : " + doublons);
+
+		//FizzBuzz
+		List<String> fizzBuzzList = playground.fizzBuzz(1, 45);
+		System.out.println("fizzBuzzList : " + fizzBuzzList);
 	}
 
 }
